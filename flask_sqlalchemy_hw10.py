@@ -62,7 +62,7 @@ def passengers():
     session = Session(engine)
     results = session.query(Measurement.station).group_by(Measurement.station).all
     session.close()
-
+    #this doesn't work
     all_station = list(np.ravel(results))
 
     return jsonify(all_station)
