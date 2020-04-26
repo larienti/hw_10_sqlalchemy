@@ -19,8 +19,8 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 
 # Save reference to the table
-Passenger = Base.classes.passenger
-
+Station = Base.classes.Station
+Measurement=Base.classes.Measurement
 
 
 #################################################
